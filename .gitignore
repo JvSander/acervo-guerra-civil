@@ -1,0 +1,7 @@
+# Cache do Godot (é refeito ao abrir o projeto)
+.godot/
+/android/
+
+# Exportações
+/exportar/
+*.tmp
