@@ -43,7 +43,7 @@ func _ready() -> void:
 
 
 func tocar(nome: String, volume_db := 0.0, tom := 1.0) -> void:
-	if not _sons.has(nome):
+	if not _sons.has(nome) or Config.modo_teste:
 		return
 	var canal := _canais[_proximo]
 	_proximo = (_proximo + 1) % _canais.size()
